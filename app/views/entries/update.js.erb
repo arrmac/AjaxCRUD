@@ -1,0 +1,4 @@
+$("#<%= dom_id @entry %>").replaceWith("<%= j render @entry %>");
+<% @entry = Entry.new # reset for new form %>
+$(".edit_entry").replaceWith("<%= j render "form" %>")
+$(".new_entry")[0].reset();
